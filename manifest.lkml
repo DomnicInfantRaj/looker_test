@@ -1,6 +1,6 @@
 project_name: "looker_extension_test"
 application: explore-assistant {
-  label: "Explore Assistant"
+  label: "Explore Assistant test"
   # file: "bundle.js"
   url: "https://8080-cs-2aab8128-5f8c-426d-9b50-4807e523add1.cs-asia-southeast1-ajrg.cloudshell.dev/bundle.js?authuser=0"
   entitlements: {
