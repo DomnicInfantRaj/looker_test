@@ -11,4 +11,5 @@ application: explore-assistant {
     new_window: yes
     new_window_external_urls: ["https://developers.generativeai.google/*"]
     local_storage: yes
-  }}
+  }
+}
