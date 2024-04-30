@@ -12,9 +12,12 @@ persist_with: looker_extension_test_default_datagroup
 
 explore: excess_deaths {}
 
-explore: us_states {}
-
 explore: mask_use_by_county {}
 
-explore: us_counties {}
-
+explore: us_counties {
+  join: us_states {
+    from: us_counties
+    relationship: many_to_many
+    sql_on:  ${us_counties.state_name} = ${us_states.state_name};;
+  }
+}
