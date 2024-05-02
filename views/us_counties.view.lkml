@@ -38,4 +38,8 @@ view: us_counties {
     type: count
     drill_fields: [state_name]
   }
+  measure: confirmed_cases_count {
+    type: number
+    sql: count(${confirmed_cases}) ;;
+  }
 }
